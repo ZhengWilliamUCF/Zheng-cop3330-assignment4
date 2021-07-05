@@ -1,0 +1,44 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+class MainProgram{
+    main()
+    start()
+}
+class ListOfToDoListsController{
+    ItemName: TextField
+    DeleteItemButton: Button
+    EditItemButton: Button
+
+    AddItemButtonClicked()
+    DeleteItemButtonClicked()
+
+    ImportButtonClicked()
+    ExportButtonClicked()
+
+    EditItemButtonClicked()
+}
+class ToDoListController{
+    EventDate: DatePicker
+    EventDescription: TextField
+    DeleteEventButton: Button
+    ToDoListName: : Label
+
+    AddEventButtonClicked()
+    DeleteEventButtonClicked()
+
+    ShowCompletedButtonClicked()
+    ShowIncompleteButtonClicked()
+    ShowAllButtonClicked()
+
+    ImportButtonClicked()
+    ExportButtonClicked()
+
+    EditToDoListNameButtonPressed()
+}
+
+javafx.ListOfToDoLists <|-- MainProgram
+javafx.ToDoLists <|-- javafx.ListOfToDoLists
+MainProgram - ListOfToDoListsController
+MainProgram -- ToDoListController
+@enduml

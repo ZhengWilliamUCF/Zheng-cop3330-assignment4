@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<SplitPane dividerPositions="0.06074766355140187, 0.15186915887850466, 0.9018691588785047" orientation="VERTICAL" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ucf.assignments.ListOfToDoListsController">
+   <items>
+      <AnchorPane prefHeight="25.0" prefWidth="688.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="688.0" text="List of To Do Lists" textAlignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="32.0" prefWidth="688.0">
+         <children>
+            <Button fx:id="AddItemButton" layoutX="14.0" layoutY="4.0" mnemonicParsing="false" onAction="#AddItemButtonClicked" prefHeight="25.0" prefWidth="94.0" text="Add Item" />
+            <TextField fx:id="ItemName" layoutX="133.0" layoutY="4.0" prefHeight="25.0" prefWidth="417.0" promptText="Enter Name of List Here" />
+            <Separator layoutX="118.0" orientation="VERTICAL" prefHeight="33.0" prefWidth="8.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="118.0" AnchorPane.topAnchor="0.0" />
+            <Button fx:id="DeleteItemButton" layoutX="580.0" layoutY="4.0" mnemonicParsing="false" onAction="#DeleteItemButtonClicked" prefHeight="25.0" prefWidth="94.0" text="Delete Item" />
+            <Separator layoutX="562.0" orientation="VERTICAL" prefHeight="33.0" prefWidth="8.0" />
+         </children>
+      </AnchorPane>
+      <ListView fx:id="myListView" prefHeight="153.0" prefWidth="688.0" />
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Button layoutX="14.0" layoutY="7.0" mnemonicParsing="false" onAction="#ImportButtonClicked" prefHeight="25.0" prefWidth="75.0" text="Import..." />
+            <Button layoutX="108.0" layoutY="7.0" mnemonicParsing="false" onAction="#ExportButtonClicked" prefWidth="75.0" text="Export..." />
+            <Button fx:id="EditItemButton" layoutX="599.0" layoutY="7.0" mnemonicParsing="false" onAction="#EditItemButtonClicked" prefWidth="75.0" text="Edit Item..." />
+         </children>
+      </AnchorPane>
+   </items>
+</SplitPane>
