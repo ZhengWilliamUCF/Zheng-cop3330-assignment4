@@ -74,6 +74,24 @@ public class ToDoListController implements Initializable {
         // display all items in listMap
     }
 
+    @FXML
+    public void MarkCompleteButtonClicked(ActionEvent actionEvent) {
+        // make sure an item is selected
+            // else do nothing
+        // get item value
+        // change item value to true if value was false
+        // change item value to false if value was true
+    }
+
+    @FXML
+    public void EditButtonClicked(ActionEvent actionEvent) {
+        // an item must be selected
+            // else do nothing
+        // opens up a new window
+        // prompts user for item description and/or event date
+        // modifies selected item data
+    }
+
     private ObservableMap<String, Object> items = FXCollections.observableMap(TestHash.hash);
 
     // runs on program start
@@ -126,4 +144,6 @@ public class ToDoListController implements Initializable {
         // returns new hashmap
         return new HashMap<>();
     }
+
+
 }

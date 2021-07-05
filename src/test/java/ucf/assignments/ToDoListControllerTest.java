@@ -70,4 +70,21 @@ class ToDoListControllerTest {
         // no need for this as default listview will show all
         // button can be removed
     }
+
+    @Test
+    void EditButtonClicked(){
+        // get index 1 of testing hashmap
+        // create a new item for edit
+        // delete previously selected item
+        // assertTrue size of list should still be same
+    }
+
+    @Test
+    void MarkCompleteClicked(){
+        // get index 1 of testing hashmap
+        // get value of item at index 1, initial value should be false
+        // set false as boolean expected
+        // change value to true
+        // assertFalse
+    }
 }

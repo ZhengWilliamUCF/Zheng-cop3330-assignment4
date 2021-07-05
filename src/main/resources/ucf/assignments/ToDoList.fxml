@@ -35,7 +35,8 @@
             <Button layoutX="331.0" layoutY="7.0" mnemonicParsing="false" onAction="#ShowIncompleteButtonClicked" prefHeight="25.0" prefWidth="118.0" text="Show Incompleted" />
             <Button layoutX="14.0" layoutY="7.0" mnemonicParsing="false" onAction="#ImportButtonClicked" prefHeight="25.0" prefWidth="75.0" text="Import..." />
             <Button layoutX="108.0" layoutY="7.0" mnemonicParsing="false" onAction="#ExportButtonClicked" prefWidth="75.0" text="Export..." />
-            <Button layoutX="462.0" layoutY="7.0" mnemonicParsing="false" onAction="#ShowAllButtonClicked" prefHeight="25.0" prefWidth="118.0" text="Show All" />
+            <Button layoutX="462.0" layoutY="7.0" mnemonicParsing="false" onAction="#ShowAllButtonClicked" prefHeight="25.0" prefWidth="118.0" text="Mark Complete" />
+            <Button layoutX="599.0" layoutY="7.0" mnemonicParsing="false" onAction="#EditButtonClicked" prefHeight="25.0" prefWidth="75.0" text="Edit..." />
          </children>
       </AnchorPane>
    </items>
